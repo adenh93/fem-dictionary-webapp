@@ -1,3 +1,69 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("@app/assets/fonts/inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("@app/assets/fonts/inter/Inter-Bold.ttf");
+}
+
+:root {
+  --color-purple: #A445ED;
+  --color-soft-red: #FF5252;
+  --color-white: #FFF;
+  --color-grey-100: #F4F4F4;
+  --color-grey-200: #E9E9E9;
+  --color-grey-300: #757575;
+  --color-grey-400: #3A3A3A;
+  --color-grey-500: #2D2D2D;
+  --color-grey-600: #1F1F1F;
+  --color-grey-700: #050505;
+
+  --font-size-heading-l: 6.4rem;
+  --font-size-heading-m: 2.4rem;
+  --font-size-heading-s: 2rem;
+  --font-size-body-m: 1.8rem;
+  --font-size-body-s: 1.4rem;
+
+  --line-height-heading-l: 7.7rem;
+  --line-height-heading-m: 2.9rem;
+  --line-height-heading-s: 2.4rem;
+  --line-height-body-m: 2.4rem;
+  --line-height-body-s: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-body-m);
+  line-height: var(--line-height-body-m);
+}
+
+h1, h2, h3 {
+  color: var(--color-grey-500);
+}
+
 h1 {
-  color: green;
+  font-size: var(--font-size-heading-l);
+  line-height: var(--line-height-heading-l);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-heading-m);
+  line-height: var(--line-height-heading-m);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: var(--font-size-heading-s);
+  line-height: var(--line-height-heading-s);
+  font-weight: 400;
 }
