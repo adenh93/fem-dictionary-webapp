@@ -1,9 +1,12 @@
+import { IconLogo } from "@app/components/Icons";
+import styles from "./App.module.css";
+
 export default function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-      <h2>Hello World</h2>
-      <p>Hello world</p>
-    </>
+    <main>
+      <header className={styles.header}>
+        <IconLogo />
+      </header>
+    </main>
   );
 }
