@@ -1,4 +1,5 @@
 import { IconLogo } from "@app/components/Icons";
+import SearchInput from "@app/components/SearchInput";
 import styles from "./App.module.css";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
       <header className={styles.header}>
         <IconLogo />
       </header>
+      <SearchInput placeholder="Search for any word..." />
     </main>
   );
 }
