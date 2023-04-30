@@ -23,7 +23,7 @@ declare namespace Dictionary {
 
   declare interface Entry {
     word: string;
-    phonetic: "string";
+    phonetic: string;
     phonetics: Phonetics[];
     meanings: Meaning[];
     sourceUrls: string[];

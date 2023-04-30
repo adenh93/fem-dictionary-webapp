@@ -12,6 +12,7 @@
 
 :root {
   --color-purple: #A445ED;
+  --color-purple-transparent: rgba(164, 69, 237, 0.25);
   --color-soft-red: #FF5252;
   --color-white: #FFF;
   --color-grey-100: #F4F4F4;
