@@ -1,0 +1,10 @@
+.flexContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+}
+
+.wordList {
+    color: var(--color-purple);
+    font-weight: 700;
+}
