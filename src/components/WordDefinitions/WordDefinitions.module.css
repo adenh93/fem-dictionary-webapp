@@ -1,0 +1,22 @@
+.definitions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3rem;
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+  margin-left: 3rem;
+}
+
+.definitions li::before {
+  content: "\2022";
+  color: var(--color-purple);
+  display: inline-block;
+  width: 3rem;
+  margin-left: -3rem;
+}
+
+.example {
+  color: var(--color-grey-300);
+  margin-top: 1.3rem;
+}
