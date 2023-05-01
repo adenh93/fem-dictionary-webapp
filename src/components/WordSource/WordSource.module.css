@@ -1,0 +1,20 @@
+.title {
+  color: var(--color-grey-300);
+  text-decoration: underline;
+  font-size: var(--font-size-body-s);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  column-gap: 0.9rem;
+  font-size: var(--font-size-body-s);
+}
+
+.link a {
+  color: var(--color-grey-500);
+}
+
+.link svg {
+  color: var(--color-grey-300);
+}
