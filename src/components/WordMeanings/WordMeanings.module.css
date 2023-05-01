@@ -1,0 +1,6 @@
+.meanings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  margin-bottom: 2.4rem;
+}
