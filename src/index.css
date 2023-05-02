@@ -87,4 +87,8 @@ hr {
     --line-height-body-m: 2.4rem;
     --line-height-body-s: 1.4rem;
   }
+
+  body {
+    padding: 6rem 4rem; 
+  }
 }

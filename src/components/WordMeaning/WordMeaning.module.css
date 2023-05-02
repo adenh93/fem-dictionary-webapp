@@ -16,3 +16,13 @@
   background-color: var(--color-white);
   padding: 0 1.6rem 0 0;
 }
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 4rem;
+  }   
+
+  .header span {
+    font-size: var(--font-size-heading-m);
+  }
+}

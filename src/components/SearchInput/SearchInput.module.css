@@ -11,7 +11,7 @@
 .input {
   width: 100%; 
   padding: 1.4rem 6rem 1.4rem 2.4rem;
-  font-size: var(--font-size-heading-s-mobile);
+  font-size: var(--font-size-heading-s);
   font-weight: 700;
   box-sizing: border-box;
   background-color: var(--color-grey-100);
@@ -42,5 +42,11 @@
 
 .errorMessage {
   color: var(--color-soft-red);
-  font-size: var(--font-size-heading-s-mobile);
+  font-size: var(--font-size-heading-s);
+}
+
+@media (min-width: 768px) {
+  .input {
+    padding: 2rem 6rem 2rem 2.4rem;
+  } 
 }
