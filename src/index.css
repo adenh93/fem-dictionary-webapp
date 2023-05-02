@@ -23,30 +23,17 @@
   --color-grey-600: #1F1F1F;
   --color-grey-700: #050505;
 
-  --font-size-heading-l: 6.4rem;
+  --font-size-heading-l: 3.2rem;
   --font-size-heading-m: 2.4rem;
-  --font-size-heading-s: 2rem;
-  --font-size-body-m: 1.8rem;
+  --font-size-heading-s: 1.6rem;
+  --font-size-body-m: 1.5rem;
   --font-size-body-s: 1.4rem;
 
-  --line-height-heading-l: 7.7rem;
+  --line-height-heading-l: 3.9rem;
   --line-height-heading-m: 2.9rem;
-  --line-height-heading-s: 2.4rem;
+  --line-height-heading-s: 1.9rem;
   --line-height-body-m: 2.4rem;
   --line-height-body-s: 1.4rem;
-
-  --font-size-heading-l-mobile: 3.2rem;
-  --font-size-heading-m-mobile: 2.4rem;
-  --font-size-heading-s-mobile: 1.6rem;
-  --font-size-body-m-mobile: 1.5rem;
-  --font-size-body-s-mobile: 1.4rem;
-
-  --line-height-heading-l-mobile: 3.9rem;
-  --line-height-heading-m-mobile: 2.9rem;
-  --line-height-heading-s-mobile: 1.9rem;
-  --line-height-body-m-mobile: 2.4rem;
-  --line-height-body-s-mobile: 1.4rem;
-
 }
 
 html {
@@ -63,20 +50,20 @@ body {
 }
 
 h1 {
-  font-size: var(--font-size-heading-l-mobile);
-  line-height: var(--line-height-heading-l-mobile);
+  font-size: var(--font-size-heading-l);
+  line-height: var(--line-height-heading-l);
   font-weight: 700;
 }
 
 h2 {
-  font-size: var(--font-size-heading-m-mobile);
-  line-height: var(--line-height-heading-m-mobile);
+  font-size: var(--font-size-heading-m);
+  line-height: var(--line-height-heading-m);
   font-weight: 400;
 }
 
 h3 {
-  font-size: var(--font-size-heading-s-mobile);
-  line-height: var(--line-height-heading-s-mobile);
+  font-size: var(--font-size-heading-s);
+  line-height: var(--line-height-heading-s);
   font-weight: 400;
 }
 
@@ -86,24 +73,18 @@ hr {
   margin: 0;
 }
 
-@media (min-width: 76.8rem) {
-  body {
-    font-size: var(--font-size-body-m);
-    line-height: var(--line-height-body-m);
-  }
+@media (min-width: 768px) {
+  :root {
+    --font-size-heading-l: 6.4rem;
+    --font-size-heading-m: 2.4rem;
+    --font-size-heading-s: 2rem;
+    --font-size-body-m: 1.8rem;
+    --font-size-body-s: 1.4rem;
 
-  h1 {
-    font-size: var(--font-size-heading-l);
-    line-height: var(--line-height-heading-l);
-  }
-
-  h2 {
-    font-size: var(--font-size-heading-m);
-    line-height: var(--line-height-heading-m);
-  }
-
-  h3 {
-    font-size: var(--font-size-heading-s);
-    line-height: var(--line-height-heading-s);
+    --line-height-heading-l: 7.7rem;
+    --line-height-heading-m: 2.9rem;
+    --line-height-heading-s: 2.4rem;
+    --line-height-body-m: 2.4rem;
+    --line-height-body-s: 1.4rem;
   }
 }
