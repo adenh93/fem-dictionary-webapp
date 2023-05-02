@@ -92,3 +92,14 @@ hr {
     padding: 6rem 4rem; 
   }
 }
+
+@media (min-width: 1440px) {
+  body {
+    padding: 5.8rem 0;
+  } 
+
+  main {
+    max-width: 73.7rem;
+    margin: 0 auto;
+  }
+}

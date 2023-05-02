@@ -15,10 +15,9 @@ export default function WordMeaning({ meaning }: WordMeaningProps) {
       <h3>Meaning</h3>
       <WordDefinitions definitions={meaning.definitions} />
       {!!meaning.synonyms.length && (
-        <RelatedWords title="Synonyms" words={meaning.synonyms} />
-      )}
-      {!!meaning.antonyms.length && (
-        <RelatedWords title="Antonyms" words={meaning.antonyms} />
+        <div className={styles.synonyms}>
+          <RelatedWords title="Synonyms" words={meaning.synonyms} />
+        </div>
       )}
     </div>
   );

@@ -19,3 +19,9 @@
   color: var(--color-purple);
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .flexContainer {
+    margin-bottom: 4rem; 
+  }
+}
