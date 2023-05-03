@@ -1,7 +1,8 @@
 import { IconLogo } from "@app/components/Icons";
 import SearchInput from "@app/components/SearchInput";
-import useDictionarySearch from "@app/hooks/useDictionarySearch";
 import DictionaryWord from "@app/components/DictionaryWord";
+import useDictionarySearch from "@app/hooks/useDictionarySearch";
+import ThemeToggle from "@app/components/ThemeToggle";
 import styles from "./App.module.css";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
     <main>
       <header className={styles.header}>
         <IconLogo />
+        <ThemeToggle />
       </header>
       <div className={styles.search}>
         <SearchInput
