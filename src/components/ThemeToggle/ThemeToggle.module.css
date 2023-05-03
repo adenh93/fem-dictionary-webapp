@@ -1,0 +1,13 @@
+.flexContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.icon {
+  color: var(--color-grey-300);
+}
+
+.icon.active {
+  color: var(--color-purple);
+}
