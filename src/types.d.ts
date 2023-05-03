@@ -1,3 +1,5 @@
+declare type Theme = "dark" | "light";
+
 declare namespace Dictionary {
   declare type PartOfSpeech = "verb" | "noun" | "exclamation";
 
