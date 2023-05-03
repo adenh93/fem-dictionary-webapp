@@ -13,7 +13,7 @@
   font-size: var(--font-size-body-m);
   font-weight: 700;
   font-style: italic;
-  background-color: var(--color-white);
+  background-color: var(--background-color);
   padding: 0 1.6rem 0 0;
 }
 

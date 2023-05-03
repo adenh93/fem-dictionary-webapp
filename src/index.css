@@ -34,6 +34,14 @@
   --line-height-heading-s: 1.9rem;
   --line-height-body-m: 2.4rem;
   --line-height-body-s: 1.4rem;
+
+  --background-color: var(--color-white);
+  --font-color: var(--color-grey-500);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--color-grey-700);
+  --font-color: var(--color-white);
 }
 
 html {
@@ -41,8 +49,8 @@ html {
 }
 
 body {
-  color: var(--color-grey-500);
-  background-color: var(--color-white);
+  color: var(--font-color);
+  background-color: var(--background-color);
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-body-m);
   line-height: var(--line-height-body-m);
@@ -71,6 +79,10 @@ hr {
   border: 1px solid var(--color-grey-200);
   width: 100%;
   margin: 0;
+}
+
+a, a:visited, a:link {
+  color: var(--font-color);
 }
 
 @media (min-width: 768px) {
