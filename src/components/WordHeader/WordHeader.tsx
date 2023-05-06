@@ -9,8 +9,6 @@ export interface WordHeaderProps {
 export default function WordHeader({ word }: WordHeaderProps) {
   const { audioAvailable, playing, playSound } = useWordAudio(word);
 
-  console.log(playing);
-
   return (
     <div className={styles.flexContainer}>
       <div className={styles.leftColumn}>
