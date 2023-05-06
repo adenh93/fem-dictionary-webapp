@@ -10,6 +10,37 @@
   src: url("@app/assets/fonts/inter/Inter-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Inconsolata";
+  font-weight: 400;
+  src: url("@app/assets/fonts/inconsolata/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  font-weight: 700;
+  src: url("@app/assets/fonts/inconsolata/Inconsolata-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 400;
+  src: url("@app/assets/fonts/lora/Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  src: url("@app/assets/fonts/lora/Lora-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  font-style: italic;
+  src: url("@app/assets/fonts/lora/Lora-BoldItalic.ttf");
+}
+
 :root {
   --color-purple: #A445ED;
   --color-purple-transparent: rgba(164, 69, 237, 0.25);
@@ -37,11 +68,20 @@
 
   --background-color: var(--color-white);
   --font-color: var(--color-grey-500);
+  --font-face: "Inter";
 }
 
 [data-theme="dark"] {
   --background-color: var(--color-grey-700);
   --font-color: var(--color-white);
+}
+
+[data-font="serif"] {
+  --font-face: "Lora";
+}
+
+[data-font="mono"] {
+  --font-face: "Inconsolata";
 }
 
 html {
@@ -51,7 +91,7 @@ html {
 body {
   color: var(--font-color);
   background-color: var(--background-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-face), sans-serif;
   font-size: var(--font-size-body-m);
   line-height: var(--line-height-body-m);
   padding: 2.4rem 2.4rem 8.4rem 2.4rem;

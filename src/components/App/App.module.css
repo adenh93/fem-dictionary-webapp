@@ -5,6 +5,11 @@
   margin-bottom: 2.4rem;
 }
 
+.widgets {
+  display: flex;
+  column-gap: 2.6rem;  
+}
+
 .search {
   margin-bottom: 2.4rem;
 }

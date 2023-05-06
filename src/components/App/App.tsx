@@ -3,6 +3,7 @@ import SearchInput from "@app/components/SearchInput";
 import DictionaryWord from "@app/components/DictionaryWord";
 import useDictionarySearch from "@app/hooks/useDictionarySearch";
 import ThemeToggle from "@app/components/ThemeToggle";
+import FontSelector from "@app/components/FontSelector";
 import styles from "./App.module.css";
 
 export default function App() {
@@ -12,7 +13,10 @@ export default function App() {
     <main>
       <header className={styles.header}>
         <IconLogo />
-        <ThemeToggle />
+        <div className={styles.widgets}>
+          <FontSelector />
+          <ThemeToggle />
+        </div>
       </header>
       <div className={styles.search}>
         <SearchInput
