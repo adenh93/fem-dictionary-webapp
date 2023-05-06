@@ -10,6 +10,15 @@
   column-gap: 2.6rem;  
 }
 
+.widgets:before {
+  content: "";
+  border-right: 0.1rem solid var(--divider-color);
+}
+
+.widgets div:first-child {
+  order: -1;
+}
+
 .search {
   margin-bottom: 2.4rem;
 }

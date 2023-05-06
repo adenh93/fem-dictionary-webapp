@@ -12,6 +12,12 @@
   font-size: var(--font-size-body-m);
   font-weight: 700;
   text-transform: capitalize;
+  background: none;
+  color: var(--font-color);
+}
+
+.wrapper > select option {
+  color: var(--color-grey-500);
 }
 
 .wrapper > svg {
@@ -22,3 +28,4 @@
   pointer-events: none;
   color: var(--color-purple);
 }
+

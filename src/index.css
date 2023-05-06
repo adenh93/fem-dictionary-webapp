@@ -67,12 +67,14 @@
   --line-height-body-s: 1.4rem;
 
   --background-color: var(--color-white);
+  --divider-color: var(--color-grey-200);
   --font-color: var(--color-grey-500);
   --font-face: "Inter";
 }
 
 [data-theme="dark"] {
   --background-color: var(--color-grey-700);
+  --divider-color: var(--color-white);
   --font-color: var(--color-white);
 }
 
