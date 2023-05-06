@@ -9,8 +9,8 @@ export default function WordSource({ sourceUrls }: WordSourceProps) {
   return (
     <div>
       <div className={styles.title}>Source</div>
-      {sourceUrls.map((url) => (
-        <div className={styles.link}>
+      {sourceUrls.map((url, key) => (
+        <div className={styles.link} key={key}>
           <a href={url} target="_blank">
             {url}
           </a>

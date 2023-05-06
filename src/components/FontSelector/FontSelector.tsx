@@ -11,7 +11,9 @@ export default function FontSelector() {
   return (
     <Select value={selectedFont} onChange={onChange}>
       {fontStyles.map((style) => (
-        <option value={style}>{style}</option>
+        <option value={style} key={style}>
+          {style}
+        </option>
       ))}
     </Select>
   );
