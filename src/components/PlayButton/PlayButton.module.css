@@ -14,6 +14,11 @@
   color: var(--color-white);
 }
 
+.button:disabled {
+  background-color: var(--color-purple-transparent);
+  color: var(--color-white);
+}
+
 .icon {
   position: absolute; 
   left: 50%;
