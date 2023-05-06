@@ -7,11 +7,11 @@ export const matchDarkColorScheme = window.matchMedia(
  * from localStorage, or the color scheme preferred by the
  * client's operating system.
  */
-export const getThemeOrDefault = (): Theme => {
+export function getThemeOrDefault(): Theme {
   const themePreference = getThemePreference();
   if (themePreference !== null) return themePreference;
   return getOSPreferredColorScheme();
-};
+}
 
 /**
  * Returns dark color theme if `prefers-color-scheme: dark`
@@ -21,19 +21,20 @@ export const getThemeOrDefault = (): Theme => {
  * Read more:
  * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
  */
-export const getOSPreferredColorScheme = (): Theme => {
+export function getOSPreferredColorScheme(): Theme {
   return matchDarkColorScheme.matches ? "dark" : "light";
-};
+}
 
 /**
  * Caches the client's preferred color theme in localStorage.
  */
-export const setThemePreference = (preference: Theme) => {
+export function setThemePreference(preference: Theme) {
   localStorage.setItem("themePreference", preference);
-};
+}
 
 /**
  * Retrieves the client's preferred color theme from localStorage.
  */
-export const getThemePreference = (): Theme | null =>
-  localStorage.getItem("themePreference") as Theme;
+export function getThemePreference(): Theme | null {
+  return localStorage.getItem("themePreference") as Theme;
+}
