@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+}
+
+.container h3 {
+  font-weight: 700;
+}
+
+.container p {
+  color: var(--color-grey-300);
+}
+
+.emoji {
+  font-size: 6.4rem;
+  margin-bottom: 4.4rem;
+}
