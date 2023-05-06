@@ -11,8 +11,8 @@ export default function IconPlay(props: HTMLAttributes<SVGElement>) {
       {...props}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 0V21L21 10.5L0 0Z"
         fill="currentColor"
       />

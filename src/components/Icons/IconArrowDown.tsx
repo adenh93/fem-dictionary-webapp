@@ -12,7 +12,7 @@ export default function IconArrowDown(props: HTMLAttributes<SVGElement>) {
       <path
         fill="none"
         stroke="currentColor"
-        stroke-width="1.5"
+        strokeWidth="1.5"
         d="m1 1 6 6 6-6"
       />
     </svg>
