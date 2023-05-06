@@ -1,11 +1,21 @@
 import { useEffect, useMemo, ChangeEventHandler } from "react";
 import _debounce from "lodash.debounce";
 import useRequest from "@app/hooks/useRequest";
-import { getDictionaryWord } from "@app/api/dictionary";
+import { getDictionaryWord } from "@app/lib/api/dictionary";
 
-export default function useDictionarySearch() {
+export default function useDictionarySearch(initialWord?: string) {
   const [searchWord, { data: words, loading, error }] =
     useRequest(getDictionaryWord);
+
+  const notFound = error?.status === 404;
+
+  // TODO: This could be moved into the useRequest hook as an
+  // optional initial request?
+  useEffect(() => {
+    if (initialWord) {
+      searchWord(initialWord);
+    }
+  }, [initialWord]);
 
   const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) =>
     searchWord(e.target.value);
@@ -18,5 +28,5 @@ export default function useDictionarySearch() {
     };
   }, []);
 
-  return { words, loading, error, onUpdateInput };
+  return { words, notFound, loading, error, onUpdateInput };
 }
