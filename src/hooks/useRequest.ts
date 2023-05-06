@@ -5,13 +5,16 @@ type AsyncFunction<T> = (...args: any) => Promise<T>;
 export default function useRequest<T>(req: AsyncFunction<T>) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<any>(null);
 
   const trigger = async (...args: any[]) => {
     setLoading(true);
 
     req(args)
-      .then(setData)
+      .then((data) => {
+        setData(data);
+        setError(null);
+      })
       .catch(setError)
       .finally(() => {
         setLoading(false);
