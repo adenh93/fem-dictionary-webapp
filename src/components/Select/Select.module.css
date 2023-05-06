@@ -1,0 +1,24 @@
+.wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.wrapper > select {
+  width: 100%;
+  padding-right: 2.8rem;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-body-m);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.wrapper > svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-purple);
+}
