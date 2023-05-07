@@ -1,9 +1,10 @@
-import { useEffect, useMemo, ChangeEventHandler } from "react";
+import { useEffect, useMemo, ChangeEventHandler, useState } from "react";
 import _debounce from "lodash.debounce";
 import useRequest from "@app/hooks/useRequest";
 import { getDictionaryWord } from "@app/lib/api/dictionary";
 
 export default function useDictionarySearch(initialWord?: string) {
+  const [inputError, setInputError] = useState<string | null>(null);
   const [searchWord, { data: words, loading, error }] =
     useRequest(getDictionaryWord);
 
@@ -17,8 +18,14 @@ export default function useDictionarySearch(initialWord?: string) {
     }
   }, [initialWord]);
 
-  const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) =>
-    searchWord(e.target.value);
+  const handleSearch: ChangeEventHandler<HTMLInputElement> = (e) => {
+    const search = e.target.value;
+
+    if (!search) return setInputError("Whoops, can't be empty...");
+
+    setInputError(null);
+    searchWord(search);
+  };
 
   const onUpdateInput = useMemo(() => _debounce(handleSearch, 300), []);
 
@@ -28,5 +35,5 @@ export default function useDictionarySearch(initialWord?: string) {
     };
   }, []);
 
-  return { words, notFound, loading, error, onUpdateInput };
+  return { words, inputError, notFound, loading, error, onUpdateInput };
 }

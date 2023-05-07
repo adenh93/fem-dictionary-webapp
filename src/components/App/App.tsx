@@ -10,7 +10,8 @@ import styles from "./App.module.css";
 const initialSearch = "keyboard";
 
 export default function App() {
-  const { words, notFound, onUpdateInput } = useDictionarySearch(initialSearch);
+  const { words, inputError, notFound, onUpdateInput } =
+    useDictionarySearch(initialSearch);
 
   const getContent = () => {
     if (notFound)
@@ -38,6 +39,7 @@ export default function App() {
         </div>
       </header>
       <SearchInput
+        error={inputError}
         defaultValue={initialSearch}
         placeholder="Search for any word..."
         onChange={onUpdateInput}

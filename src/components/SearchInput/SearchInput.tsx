@@ -1,9 +1,10 @@
-import { HTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 import { IconSearch } from "@app/components/Icons";
 import styles from "./SearchInput.module.css";
 
-export interface SearchInputProps extends HTMLAttributes<HTMLInputElement> {
-  error?: string;
+export interface SearchInputProps
+  extends InputHTMLAttributes<HTMLInputElement> {
+  error?: string | null;
 }
 
 export default function SearchInput({ error, ...props }: SearchInputProps) {
